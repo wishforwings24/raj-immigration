@@ -60,6 +60,6 @@ revealElements.forEach((el) => {
 
 // Console signature
 console.log(
-  "%c Designed for Raj Immigration ",
+  "%c Designed for Tauras Immigration ",
   "background: #002147; color: #D4AF37; padding: 4px; border-radius: 4px;"
 );
