@@ -39,6 +39,44 @@ This is the best method. Whenever you save a change to your code and push it to 
     ```
 3.  Netlify will detect the push and automatically re-deploy your site.
 
+### Phase 3: Connect Your Custom Domain (www.tauras.com.au)
+
+Once your site is on Netlify, you need to point your domain name to it.
+
+1.  **In Netlify**:
+
+    - Go to **Site settings** > **Domain management**.
+    - Click **"Add custom domain"**.
+    - Enter `www.tauras.com.au` and click Verify/Add.
+
+2.  **At your Domain Registrar** (where you bought the domain):
+
+    - Netlify will show you **DNS records** to add.
+    - Log in to your registrar (e.g., GoDaddy, CrazyDomains) and go to **DNS Settings**.
+    - Add the **CNAME record** Netlify provides (usually pointing `www` to `your-site-name.netlify.app`).
+    - Add the **A Record** if requested (pointing `@` to Netlify's IP `75.2.60.5`).
+
+3.  **Wait**: DNS changes can take up to 24 hours (but usually happen in minutes). Once active, Netlify will automatically provision a free SSL certificate (HTTPS).
+
+### Phase 3: Connect Your Custom Domain (www.tauras.com.au)
+
+Once your site is on Netlify, you need to point your domain name to it.
+
+1.  **In Netlify**:
+
+    - Go to **Site settings** > **Domain management**.
+    - Click **"Add custom domain"**.
+    - Enter `www.tauras.com.au` and click Verify/Add.
+
+2.  **At your Domain Registrar** (where you bought the domain):
+
+    - Netlify will show you **DNS records** to add.
+    - Log in to your registrar (e.g., GoDaddy, CrazyDomains) and go to **DNS Settings**.
+    - Add the **CNAME record** Netlify provides (usually pointing `www` to `your-site-name.netlify.app`).
+    - Add the **A Record** if requested (pointing `@` to Netlify's IP `75.2.60.5`).
+
+3.  **Wait**: DNS changes can take up to 24 hours (but usually happen in minutes). Once active, Netlify will automatically provision a free SSL certificate (HTTPS).
+
 ---
 
 ## Option 2: Netlify Drop (Simple / Manual)
